@@ -41,12 +41,12 @@
 
 | 파일 | 설명 |
 |------|------|
-| `randm.c` | POSIX `random()` 함수 사용 예제 (시드 없이 기본 상태로 한 번 호출) :contentReference[oaicite:9]{index=9} |
-| `drand.c` | `srand48(time(NULL))` 후 `drand48()`으로 0.0 ~ 1.0 실수 난수 생성 :contentReference[oaicite:10]{index=10} |
-| `urandom.c` | `/dev/urandom`에서 32바이트를 읽어 HEX로 출력 (CSPRNG) :contentReference[oaicite:11]{index=11} |
-| `get_random.c` | Linux `getrandom()` syscall로 32바이트 난수 생성 (CSPRNG) :contentReference[oaicite:12]{index=12} |
-| `randbytes.c` | OpenSSL `RAND_bytes()`로 32바이트 난수 생성 (CSPRNG) :contentReference[oaicite:13]{index=13} |
-| `rndbytes_buf.c` | libsodium `randombytes_buf()`로 16바이트 난수 생성 (CSPRNG) :contentReference[oaicite:14]{index=14} |
+| `randm.c` | POSIX `random()` 함수 사용 예제 (시드 없이 기본 상태로 한 번 호출) |
+| `drand.c` | `srand48(time(NULL))` 후 `drand48()`으로 0.0 ~ 1.0 실수 난수 생성 |
+| `urandom.c` | `/dev/urandom`에서 32바이트를 읽어 HEX로 출력 (CSPRNG) |
+| `get_random.c` | Linux `getrandom()` syscall로 32바이트 난수 생성 (CSPRNG) |
+| `randbytes.c` | OpenSSL `RAND_bytes()`로 32바이트 난수 생성 (CSPRNG) |
+| `rndbytes_buf.c` | libsodium `randombytes_buf()`로 16바이트 난수 생성 (CSPRNG) |
 
 이들 파일은 `rand()`를 전혀 쓰지 않고, **각각 다른 난수 API의 기본 사용법**을 보여줍니다.
 
