@@ -17,15 +17,15 @@
 
 | 파일 | 설명 |
 |------|------|
-| `clo.c` | `clock()` 값을 그대로 시드로 사용하는 예제 :contentReference[oaicite:0]{index=0} |
+| `clo.c` | `clock()` 값을 그대로 시드로 사용하는 예제 |
 | `clocktime.c` | CPU 시간(`clock()` 계열)을 활용한 시드 예제 (구조는 `clo.c`와 유사) |
-| `time_clo.c` | `clock_gettime(CLOCK_MONOTONIC)`의 초/나노초를 XOR 하여 시드로 사용 :contentReference[oaicite:1]{index=1} |
-| `timeofday.c` | `gettimeofday()`의 마이크로초(`tv_usec`) 값을 시드로 사용 :contentReference[oaicite:2]{index=2} |
-| `pid.c` | `getpid()`(프로세스 ID)를 시드로 사용하는 예제 :contentReference[oaicite:3]{index=3} |
-| `mem.c` | 스택 변수의 주소를 `unsigned long`으로 캐스팅해 시드로 사용 :contentReference[oaicite:4]{index=4} |
-| `urand.c` | `/dev/urandom`에서 4바이트를 읽어 시드로 사용 :contentReference[oaicite:5]{index=5} |
-| `rnd_bytes.c` | OpenSSL `RAND_bytes()`로 32바이트 난수를 생성해 HEX 출력 (시드가 아니라 CSPRNG 자체 예제) :contentReference[oaicite:6]{index=6} |
-| `sc_user.c` | 사용자로부터 `seed`를 직접 입력받아 `srand(seed)` 설정 :contentReference[oaicite:7]{index=7} |
+| `time_clo.c` | `clock_gettime(CLOCK_MONOTONIC)`의 초/나노초를 XOR 하여 시드로 사용 |
+| `timeofday.c` | `gettimeofday()`의 마이크로초(`tv_usec`) 값을 시드로 사용 |
+| `pid.c` | `getpid()`(프로세스 ID)를 시드로 사용하는 예제 |
+| `mem.c` | 스택 변수의 주소를 `unsigned long`으로 캐스팅해 시드로 사용 |
+| `urand.c` | `/dev/urandom`에서 4바이트를 읽어 시드로 사용 |
+| `rnd_bytes.c` | OpenSSL `RAND_bytes()`로 32바이트 난수를 생성해 HEX 출력 (시드가 아니라 CSPRNG 자체 예제) |
+| `sc_user.c` | 사용자로부터 `seed`를 직접 입력받아 `srand(seed)` 설정 |
 
 각 예제는 공통적으로:
 
